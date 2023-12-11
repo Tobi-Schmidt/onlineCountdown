@@ -9,15 +9,11 @@
     </style>
     <link rel="StyleSheet" href="style.css" />
 </head>
-<body>
-    <div class="flex-container">
+<body id="body">
+    <div class="flex-container" id="flex-container">
         <div class="item1" id="left">
-            
-            
-                    <img class="image" src="images/banner.png"  nameid="banner"  id="banner" />
-
-              
-            </div>    
+            <img class="image" src="images/banner.png"  nameid="banner"  id="banner" />              
+        </div>    
         <div id="countdown" class="item2">
             <div class="time" id="d"></div>
             <div class="time" id="h"></div>
@@ -25,12 +21,10 @@
             <div class="time" id="s"></div>
         </div>
     </div>
-
-
-
+    <button class="button" onclick="openFullscreen();">Fullscreen</button>
 <script>
     // Set the target date for the countdown (YYYY-MM-DD format)
-    const targetDate = new Date("2024-05-22T09:00:00");
+    const targetDate = new Date("2024-05-21T09:00:00");
 
     function updateCountdown() {
         const currentDate = new Date();
@@ -58,6 +52,17 @@
 
     // Initial call to set the initial countdown
     updateCountdown();
+
+    var elem = document.getElementById("flex-container");
+    function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
 </script>
 
 </body>
