@@ -12,15 +12,7 @@ body {
     font-size: 6em;
     font-weight: bold;
     color: #333;
-    text-align: center;  /* Center the text */
-}
-
-#legend {
-    line-height: 1.75;
-    font-size: 6em;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
+    text-align: left;  /* Center the text */
 }
 
 .flex-container {
@@ -34,10 +26,6 @@ body {
 
 .flex-container > div {
     text-align: center;
-    font-size: 6em;
-    font-weight: bold;
-    color: #333;
-    text-align: right;
 }
 
 .image {
@@ -55,19 +43,13 @@ body {
 
 .item2 {
     flex-shrink: 2;
-    flex-basis: 25%;
+    flex-basis: 50%;
     background-color: white;
-}
-
-.item3 {
-    flex-shrink: 3;
-    flex-basis: 25%;
-    background-color: white;
-    margin-right: 75px;
 }
 
 .time {
-    line-height: 1.75;
+    margin: 50px;
+    margin-left: 100px;
 }
 
 .button {
